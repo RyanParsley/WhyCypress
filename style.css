@@ -26,17 +26,29 @@ h1,h2,h3,h4,h5 {
 .remark-slide-content h4 {
   font-size: 16px;
 }
-.remark-slide-content {
-  background-color: #FFDFAA;
+img {
+  max-width: 750px;
+  height: auto;
+}
+li {
+  font-size: 28px;
+}
+.links li {
+  font-size: 21px;
 }
 .remark-slide-content:before {
   content: '';
-  background: radial-gradient(circle, rgba(255,223,170,1) 67%, rgba(212,173,106,1) 100%);
+  background: url(./assets/noise.png), radial-gradient(circle, rgba(255,223,170,1) 67%, rgba(212,173,106,1) 100%);
+  background-size: 50px 50px, auto;
   position:absolute;
   top:0;
   bottom:0;
   left:0;
   right:0;
+  z-index:-1;
+}
+.remark-slide-content {
+  background-color: transparent;
 }
 .remark-slide-content * {
   position: relative;
@@ -46,18 +58,21 @@ h1,h2,h3,h4,h5 {
 }
 .remark-slide-content.title {
   background: rgb(76,103,140,1);
-  background: radial-gradient(circle, rgba(76,103,140,1) 50%, rgba(44,72,112,1) 100%);
+  background: url(./assets/noise.png), radial-gradient(circle, rgba(76,103,140,1) 50%, rgba(44,72,112,1) 100%);
+  background-size: 50px 50px, auto;
 }
-
 .remark-slide-content.title:before {
  display: none;
 }
-
 .remark-slide-content {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   color: #553500;
+}
+.remark-slide-content.title .remark-slide-number {
+  color: #758AA8;
+  color: #051A38;
 }
 .remark-slide-content.title h1 {
   font-size: 60px;
@@ -76,13 +91,13 @@ a:hover {
   opacity: .8;
 }
 blockquote{
-  font-size: 1.6vw;
+  font-size: 24px;
   width:60%;
   margin:50px auto;
   font-family:Open Sans;
   font-style:italic;
   color: #142F54;
-  padding:1.2em 30px 1.2em 75px;
+  padding: 21px 48px 21px 75px;
   border-left:8px solid #2C4870;
   line-height:1.4;
   position: relative;
@@ -118,4 +133,15 @@ pre{
 }
 .remark-code {
   font-size: 16px;
+}
+
+table {
+  background: #fff;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
